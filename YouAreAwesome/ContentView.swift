@@ -18,10 +18,27 @@ struct ContentView: View {
                 .foregroundStyle(.orange)
             Text(message)
                 .font(.largeTitle)
-                .fontWeight(.heavy)
-                .foregroundStyle(.red)
-            Button("Click me!"){
-                message="You clicked me!"
+                .fontWeight(.ultraLight)
+                .foregroundStyle(.black)
+            
+            HStack {
+                Button("Awesome!"){
+                    message="Awesome!"
+                }
+                .buttonStyle(.borderedProminent)
+                .font(.title2)
+                .buttonBorderShape(.roundedRectangle)
+                .tint(.orange)
+                
+                Button("Great!"){
+                    message="Great Job!"
+                    
+                }
+                .buttonStyle(.borderedProminent)
+                .font(.title2)
+                .buttonBorderShape(.roundedRectangle)
+                .tint(.orange)
+                
             }
         }
         .padding()
